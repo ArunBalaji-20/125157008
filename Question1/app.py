@@ -12,7 +12,7 @@ data['avg']=0
 
 #url 
 url = 'http://20.244.56.144/test/'
-token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzIxMTQxNDM0LCJpYXQiOjE3MjExNDExMzQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjA3MzdkOGM0LThiZGMtNGU2Yi04NmI2LWMyOWRkNmMzOTBjNCIsInN1YiI6IjEyNTE1NzAwOEBzYXN0cmEuYWMuaW4ifSwiY29tcGFueU5hbWUiOiJjb21wYW55YXJ1biIsImNsaWVudElEIjoiMDczN2Q4YzQtOGJkYy00ZTZiLTg2YjYtYzI5ZGQ2YzM5MGM0IiwiY2xpZW50U2VjcmV0Ijoid3daTW1EdldhS0Jwb3J0UiIsIm93bmVyTmFtZSI6IkFydW4gQmFsYWppIEIiLCJvd25lckVtYWlsIjoiMTI1MTU3MDA4QHNhc3RyYS5hYy5pbiIsInJvbGxObyI6IjEyNTE1NzAwOCJ9.u045sJmQRbS56lQfS-wDvDwx4ut1Fgxa487V2TW7E6A'
+token='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzIxMTQyMDg4LCJpYXQiOjE3MjExNDE3ODgsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjA3MzdkOGM0LThiZGMtNGU2Yi04NmI2LWMyOWRkNmMzOTBjNCIsInN1YiI6IjEyNTE1NzAwOEBzYXN0cmEuYWMuaW4ifSwiY29tcGFueU5hbWUiOiJjb21wYW55YXJ1biIsImNsaWVudElEIjoiMDczN2Q4YzQtOGJkYy00ZTZiLTg2YjYtYzI5ZGQ2YzM5MGM0IiwiY2xpZW50U2VjcmV0Ijoid3daTW1EdldhS0Jwb3J0UiIsIm93bmVyTmFtZSI6IkFydW4gQmFsYWppIEIiLCJvd25lckVtYWlsIjoiMTI1MTU3MDA4QHNhc3RyYS5hYy5pbiIsInJvbGxObyI6IjEyNTE1NzAwOCJ9.xdD2RRQYd28zCwUhDk5zzxb2JjeTe38MeadxW20QOiY'
 
 headers= {'Authorization': f'Bearer {token}',
     'Content-Type': 'application/json'
@@ -83,9 +83,9 @@ def even():
             data['windowPrevstate']=data['windowCurrState']
             print(data,'2nd response')
             return temp
-        print('inisde else')
+        
 
-        return res.json()
+        
 
 
 @app.route('/numbers/p')
@@ -123,9 +123,7 @@ def primes():
             data['windowPrevstate']=data['windowCurrState']
             print(data,'2nd response')
             return temp
-        print('inisde else')
-
-        return res.json()
+        
 
 
 @app.route('/numbers/f')
@@ -165,9 +163,7 @@ def fibo():
             data['windowPrevstate']=data['windowCurrState']
             print(data,'2nd response')
             return temp
-        print('inisde else')
-
-        return res.json()
+        
 
 
 @app.route('/numbers/r')
@@ -207,9 +203,7 @@ def random():
             data['windowPrevstate']=data['windowCurrState']
             print(data,'2nd response')
             return temp
-        print('inisde else')
 
-        return res.json()
     
 
     
